@@ -10,7 +10,7 @@ pipeline {
             steps {
                 sh "chmod +x ./get_response.sh"
                 catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                  sh "./get_response.sh https://www.googlespoonser.xyrs"
+                  sh "./get_response.sh https://www.google.com"
                 }
             }
         }
